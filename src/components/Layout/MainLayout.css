@@ -1,0 +1,152 @@
+.eo-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.eo-sidebar {
+  width: 260px;
+  flex-shrink: 0;
+  background: var(--eo-ink);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1rem;
+}
+
+.eo-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0 0.5rem 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.eo-brand-mark {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: var(--eo-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--eo-font-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.eo-brand-name {
+  font-family: var(--eo-font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.eo-brand-sub {
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.eo-panelmenu {
+  flex: 1;
+}
+
+.eo-panelmenu .p-panelmenu-header-content,
+.eo-panelmenu .p-menuitem-link {
+  background: transparent !important;
+  border: none !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.eo-panelmenu .p-menuitem-link:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+.eo-sidebar-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1rem 0.5rem;
+  margin-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.eo-avatar {
+  background: var(--eo-accent-soft) !important;
+  color: var(--eo-accent-dark) !important;
+  font-weight: 600 !important;
+}
+
+.eo-user-info {
+  overflow: hidden;
+}
+
+.eo-user-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.eo-user-email {
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.eo-logout-btn {
+  color: rgba(255, 255, 255, 0.75) !important;
+  justify-content: flex-start !important;
+}
+
+.eo-main {
+  flex: 1;
+  min-width: 0;
+  background: var(--eo-paper);
+}
+
+/* Responsividade: sidebar vira barra superior compacta em telas pequenas */
+@media (max-width: 900px) {
+  .eo-layout {
+    flex-direction: column;
+  }
+
+  .eo-sidebar {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+  }
+
+  .eo-brand {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .eo-panelmenu {
+    width: 100%;
+    order: 3;
+    flex: none;
+  }
+
+  .eo-sidebar-footer {
+    border-top: none;
+    margin-top: 0;
+    padding: 0;
+    margin-left: auto;
+  }
+
+  .eo-logout-btn {
+    order: 2;
+  }
+}
