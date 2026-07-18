@@ -1,0 +1,53 @@
+.eo-table-card {
+  padding: 1.25rem;
+}
+
+.eo-table-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.eo-row-actions {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.eo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  padding-top: 0.5rem;
+}
+
+.eo-form .eo-field .p-inputtext,
+.eo-form .eo-field .p-password,
+.eo-form .eo-field .p-password-input {
+  width: 100%;
+}
+
+.eo-form-hint {
+  font-size: 0.78rem;
+  color: var(--eo-ink-soft);
+}
+
+.eo-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .eo-table-toolbar {
+    justify-content: stretch;
+  }
+
+  .eo-table-toolbar .p-iconfield {
+    width: 100%;
+  }
+
+  .eo-table-toolbar input {
+    width: 100%;
+  }
+}
