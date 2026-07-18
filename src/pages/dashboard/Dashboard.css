@@ -1,0 +1,30 @@
+.eo-shortcut-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.eo-shortcut-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 2rem 1rem;
+  cursor: pointer;
+  font-family: var(--eo-font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--eo-ink);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.eo-shortcut-card i {
+  font-size: 1.5rem;
+  color: var(--eo-accent);
+}
+
+.eo-shortcut-card:hover {
+  border-color: var(--eo-accent);
+  transform: translateY(-2px);
+}

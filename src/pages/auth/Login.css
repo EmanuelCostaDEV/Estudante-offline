@@ -1,0 +1,64 @@
+.eo-login-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--eo-ink);
+  padding: 1.5rem;
+}
+
+.eo-login-card {
+  width: 100%;
+  max-width: 380px;
+  padding: 2.5rem 2rem;
+}
+
+.eo-login-card h1 {
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.eo-login-subtitle {
+  color: var(--eo-ink-soft);
+  font-size: 0.88rem;
+  margin-bottom: 1.75rem;
+}
+
+.eo-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.eo-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--eo-ink-soft);
+}
+
+.eo-field .p-inputtext,
+.eo-field .p-password,
+.eo-field .p-password-input {
+  width: 100%;
+}
+
+.eo-login-btn {
+  margin-top: 0.5rem;
+  background: var(--eo-accent) !important;
+  border-color: var(--eo-accent) !important;
+  justify-content: center !important;
+}
+
+.eo-login-btn:hover {
+  background: var(--eo-accent-dark) !important;
+  border-color: var(--eo-accent-dark) !important;
+}
+
+@media (max-width: 480px) {
+  .eo-login-card {
+    padding: 2rem 1.25rem;
+  }
+}
