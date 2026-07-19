@@ -1,0 +1,60 @@
+.eo-student-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.eo-empty-state {
+  padding: 2rem;
+  text-align: center;
+  color: var(--eo-ink-soft);
+}
+
+.eo-student-class-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.eo-block-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.eo-muted {
+  color: var(--eo-ink-soft);
+  font-size: 0.85rem;
+}
+
+.eo-simple-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.eo-simple-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+  background: var(--eo-paper);
+  border-radius: 6px;
+  font-size: 0.88rem;
+}
+
+.eo-grade-value {
+  font-weight: 600;
+  color: var(--eo-accent-dark);
+}
+
+@media (max-width: 700px) {
+  .eo-student-class-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
