@@ -1,0 +1,20 @@
+.eo-denied {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.eo-denied h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.eo-denied-text {
+  color: var(--eo-ink-soft);
+  max-width: 380px;
+  margin-bottom: 1.5rem;
+}
